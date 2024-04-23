@@ -109,6 +109,17 @@
 </html>
 ```
 
+```css
+h2 {
+    color: white;
+    background: black;
+}
+h3 {
+    color: yellow;
+    background: red;
+}
+```
+
 ![경고창](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/086b4d62-63b3-4102-8031-bab8495fffe7)
 
 
