@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css selector</title>
+    <style> h1 {
+        color: red;
+        background: aquamarine;
+    }
+    #header {
+        width: 800px;
+        margin: 0;
+        background: aquamarine;
+    }
+    #wrap {
+        width: 1000px;
+        margin: 0;
+        background: aqua;
+    }
+    .class1 {
+        color: red;
+    }
+    .example {
+        color: blue;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+
+<h1>CSS 선택자 기본</h1>
+<h1>선택자 학습</h1>
+
+<h2>제목 글자 태그</h2>
+<p>브루노 페르난데스가 이번 시즌 잉글랜드 프리미어리그(PL) 단일 경기 최다 기회 창출 기록을 썼다.
+    25일(한국시간) 영국 맨체스터에 위치한 올드트래포드에서 2023-2024 PL 34라운드를 치른 맨유가 셰필드유나이티드에 4-2로 승리했다.
+</p>
+
+<div id = "header">
+    <h3>header</h3>
+</div>
+<div id = "wrap">
+    <h3>aside</h3>
+</div>
+<li class="class1">클래스 선택자 Class selector</li>
+<h3 class="class example">클래스 선택자 Class selector</h3>
+</body>
+</html>
+
+<!--
+* 전체 선택자: 페이지 내부의 모든 태그에 적용
+  태그 선택자: 태그 작성
+  ID 선택자: 각 고유한 id를 설정해 id에 css 적용
+  클래스 선택자: 하나 이상의 요소에 공통적으로 적용
+-->
