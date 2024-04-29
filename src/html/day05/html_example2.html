@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 입력 양식</title>
+</head>
+<body>
+<form>
+    <div class="input-row">
+        <label for="author">작성자 >> </label>
+        <input type="text" id="author">
+    </div>
+    <div class="input-row">
+        <label for="email">이메일 >> </label>
+        <input type="text" id="email"><span>@</span><select>
+        <option>google.com</option>
+        <option>naver.com</option>
+        <option>nate.com</option>
+    </select>
+    </div>
+    <div class="input-row">
+        <label for="password">비밀번호 >> </label>
+        <input type="password" id="password">
+    </div>
+    <div class="input-row">
+        <label for="phone">전화번호 >> </label>
+        <select id="phone">
+            <option>010</option>
+            <option>011</option>
+            <option>012</option>
+        </select>
+        <input type="text"><span>-</span><input type="text">
+    </div>
+    <div class="input-row">
+        <label for="title">글 제목 >> </label>
+        <input type="text" id="title">
+    </div>
+    <div>
+        <label for="content">글 내용 >> </label>
+        <textarea id="content" cols="30" rows="10"></textarea>
+    </div>
+</form>
+</body>
+</html>
