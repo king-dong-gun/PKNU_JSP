@@ -211,3 +211,54 @@ padding: 10px 20px 30px 40px;
 ```
 
 ![inline-block](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/2e2a57f2-c659-4e19-ba03-8f94ff304a96)
+
+
+- `margin`: 요소의 외부 여백 설정한다.
+##### 단일적용
+```html
+<style>
+  margin: 20px;  // 모든 방향에 20픽셀의 마진을 적용
+</style>
+```
+- 모든 값에 동일한 값 적용
+
+##### 상/하, 좌/우 적용
+```html
+<style>
+  margin: 10px 15px;  // 위아래에 10픽셀, 좌우에 15픽셀의 마진을 적용
+</style>
+```
+- 첫번째 값은 상/하, 두번째 값은 좌/우에 적용
+
+##### 상, 좌/우, 하 적용
+```html
+<style>
+margin: 10px 20px 30px;  // 위에 10픽셀, 좌우에 20픽셀, 아래에 30픽셀의 마진을 적용
+</style>
+```
+- 첫번째 값은 상, 좌/우에 두번째값, 하에 세번째 값 적용
+
+##### 상, 우, 하, 좌 적용
+```html
+<style>
+  margin: 10px 20px 30px 40px;  // 위에 10픽셀, 오른쪽에 20픽셀, 아래에 30픽셀, 왼쪽에 40픽셀의 마진을 적용
+</style>
+```
+- 첫번째 값은 상, 두번째 값은 우, 세번째 값은 하, 네번째 값은 좌에 적용
+
+
+- `background-image`: HTML 요소의 배경으로 이미지를 설정한다.
+- `background-repeat`: 이미지를 반복적으로 사용하는지 여부를 설정한다
+- `background-position`: 배경 이미지의 위치를 설정한다.
+- `background-attachmen`: 스크롤과 배경 이미지의 상대적 움직임을 설정한다.
+```html
+<style>
+  background-image: url('../../image/민희진.jpeg');
+  background-repeat: repeat;
+  background-position: center top;
+  background-attachment: fixed;
+</style>
+```
+
+![스크린샷 2024-04-29 오후 2 30 28](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/7ed74c9f-c8b3-43ff-bd5f-768190f9b0fb)
+
