@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p:nth-child(1)
+        p:nth-child(2) {
+            font-size: 16px;
+        }
+        p:nth-child(3) {
+            font-size: 24px;
+        }
+        p:nth-child(4) {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+<p>맨체스터는 빨간색입니다.</p>
+<p>맨체스터는 빨간색입니다.</p>
+<p>맨체스터는 빨간색입니다.</p>
+<p>맨체스터는 빨간색입니다.</p>
+
+</body>
+</html>
+
+<!--
+절대 길이 단위 1px = 0.265mm
+모니터 길이에 따라 상대적인 크기를 가진다
+-->
+
+<!--
+CSS 적용 우선 순위
+1순위 >> 속성값 뒤 !important
+(important-black {color: red; !important})
+
+2순위 >> style을 직접 지정한 속성 (인라인 속성)
+
+3순위 >> #id 속성
+
+4순위 >> 태그를 지정한 속성
+
+5위 >> 상위 객체에 의한 상속된 속성
+-->
