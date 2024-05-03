@@ -2,6 +2,123 @@
 
 ### HTML 기초 학습
 
+#### css 단위
+- `%`, `em`, `rem`등등
+
+##### 적용기준
+>부모 요소에 따라 사이즈가 변경되어야 하는 경우
+> - em
+> - %
+ 
+> 요소의 너비 또는 높이에 따라 사이즈가 변경되어야 하는 경우
+> - %
+> - viewport 
+
+
+##### em
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Em&Rem Study</title>
+
+    <link rel="stylesheet" href="./em.css"/>
+</head>
+<body>
+<div class="level1">
+    <h1>Level 1</h1>
+    <div class="level2">
+        <h1>Level 2</h1>
+        <div class="level3">
+            <h1>Level 3</h1>
+            <div class="level4">
+                <h1>Level 4</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+```
+
+```css
+.level1 {
+font-size: 2em;
+}
+
+.level2 {
+font-size: 2em;
+}
+
+.level3 {
+font-size: 2em;
+}
+
+.level4 {
+font-size: 2em;
+}
+```
+
+![em](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/cc3d9d4b-fd72-4843-bd99-4ced2832ae05)
+
+
+
+##### rem
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Em&Rem Study</title>
+
+    <link rel="stylesheet" href="rem.css"/>
+</head>
+<body>
+<div class="level1">
+    <h1>Level 1</h1>
+    <div class="level2">
+        <h1>Level 2</h1>
+        <div class="level3">
+            <h1>Level 3</h1>
+            <div class="level4">
+                <h1>Level 4</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+```
+
+
+```css
+.level1 {
+    font-size: 32px;
+}
+
+.level2 {
+    font-size: 32px;
+}
+
+.level3 {
+    font-size: 32px;
+}
+
+.level4 {
+    font-size: 32px;
+}
+```
+
+![rem](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/4e5c9cfb-f20b-4fa4-a816-f7e1c84de45b)
+
+
+
+
 #### flex
 - css에서 `display` 속성 중 하나로, **단일 방향 레이아웃**을 작성할 때 사용한다.
   - 기본값은 `rows`

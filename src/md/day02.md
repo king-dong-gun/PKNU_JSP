@@ -271,5 +271,5 @@
 </html>
 ```
 
-![비디오](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/fea731ea-330c-4548-8a74-27230f8a62f1)
+
 

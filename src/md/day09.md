@@ -31,7 +31,53 @@
 
 #### media query
 - `media`: css에서 어떤 스타일을 선택적으로 적용하고 싶을 때 사용한다.*(Java의 if문이라고 생각하면 된다.)*
+  - 데스크탑, 노트북, 휴대폰 등등 선택적 시트를 제공한다.
 
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media_print</title>
+    <style>
+        @media screen {
+            body {
+                background-color: palevioletred;
+            }
+        }
+            @media print {
+                body {
+                    background-color: red;
+                }
+            }
+    </style>
+</head>
+<body>
+<h1>맨체스터 유나이티드</h1>
+<p>영국 잉글랜드 그레이터맨체스터 주의 트래포드를 연고로 하는 프로축구 구단이다.
+    뉴턴 히스 LYR F.C.(Newton Heath LYR F.C.)라는 이름으로 창설되었다.
+    1902년 4월 26일 지금의 이름인 맨체스터 유나이티드 F.C.로 개칭 하였고, 1910년에는 홈 경기장을 맨체스터 시 동북쪽의 뱅크 스트리트에서 서남쪽의 올드 트래포드로 이전했다.</p>
+
+</body>
+</html>
+```
+
+- `print` 미디어 타입
+
+
+![print](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/78c9d8ba-6013-479f-8e6b-644aa9da9b5e)
+
+
+
+![print2](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/70f363d1-5cde-45b3-93a7-3f23dd6d5c63)
+
+
+
+#### 외부 라이브러리 아이콘을 사용하여 css 만들기
+- `JavaScript`를 조금 참조해 모달창, 드롭메뉴 생성
 
 
 ```html
@@ -139,7 +185,6 @@
 
 ```
 
-- `javaScript` 자료 참고하여 `html` 생성
 
 ```css
 /* 전체 페이지의 마진을 제거하여 여백 없이 시작 */

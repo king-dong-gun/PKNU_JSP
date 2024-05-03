@@ -1,34 +1,32 @@
-/* 컨테이너 설정: 패딩, 배경색, 높이, 플렉스박스 디스플레이 */
 .container {
-    padding-top: 100px; /* 상단에 100픽셀의 공간을 추가 */
-    background: aliceblue; /* 배경색을 연한 파란색(앨리스블루)으로 설정 */
-    height: 100vh; /* 뷰포트 높이(화면 높이)의 100%를 차지하도록 설정 */
-    display: flex; /* 플렉스박스 모델 사용으로 내부 아이템을 유연하게 배열 */
+    padding-top: 100px;
+    background: beige;
+    height: 100vh;
+
+    display: flex;
 }
 
-/* 기본 아이템 스타일: 크기, 테두리 */
 .item {
-    width: 40px; /* 너비를 40픽셀로 설정 */
-    height: 40px; /* 높이를 40픽셀로 설정 */
-    border: 1px solid black; /* 검은색 1픽셀 테두리로 아이템을 구분 */
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
 }
 
-/* 아이템1 설정: 배경색, 크기 조정, 개별 정렬 */
-.item1 {
-    background-color: aqua;
-    /* 컨테이너 내 남은 공간을 다른 아이템보다 많이 차지하도록 비례적으로 늘리도록 설정 */
+.item1{
+    background-color: #d7bee2;
     flex-grow: 1;
-    flex-shrink: 1; /* 공간 부족 시 비례적으로 축소 가능 */
-    flex-basis: 60%; /* 기본 크기를 컨테이너의 60%로 설정 */
-    align-self: center; /* 컨테이너의 교차 축에서 본인만 중앙 정렬 */
+    flex-shrink: 1;
+
+    align-self: center;
 }
 
-/* 아이템2 스타일: 배경색 */
-.item2 {
-    background-color: beige;
+.item2{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #a9c7d8;
 }
-
-/* 아이템3 스타일: 배경색 */
-.item3 {
-    background-color: chartreuse;
+.item3{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #c0df9f;
 }

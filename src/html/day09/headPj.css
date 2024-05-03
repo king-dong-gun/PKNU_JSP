@@ -1,108 +1,77 @@
-/* 전체 페이지의 마진을 제거하여 여백 없이 시작 */
 body {
     margin: 0;
 }
 
-/* 모든 링크의 기본 밑줄 스타일을 제거하고, 색상을 진한 파란색으로 설정 */
 a {
     text-decoration: none;
-    color: darkblue;
+    color: black;
 }
 
-/* 네비게이션 바 설정: 가로 레이아웃, 요소 간 간격 동등 배분, 세로 중앙 정렬 */
 .navbar {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: lavenderblush;
+    align-items: center;
+    background-color: slateblue;
 }
 
-/* 네비게이션 바의 로고 스타일: 폰트 크기 및 색상 설정 */
 .navbar_logo {
     font-size: 24px;
-    color: rgb(234, 93, 93);
+    color: rgb(234, 217, 217);
 }
 
-/* 네비게이션 메뉴의 스타일: 수평 방향으로 항목 정렬, 리스트 스타일 없음, 왼쪽 패딩 제거 */
 .navbar_menu {
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-/* 네비게이션 메뉴 항목에 대한 스타일: 인라인 블록으로 표시, 각 항목의 너비를 100%로 설정 */
 .navbar_menu li {
-    position: relative;
-    display: inline-block;
-    width: 100%;
+    padding: 8px 12px;
 }
 
-/* 드롭다운 메뉴의 내용을 기본적으로 숨기고, 위치와 스타일을 지정 */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* 드롭다운 내부 링크의 스타일: 색상, 패딩, 텍스트 정렬 */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* 드롭다운이 호버될 때 내용을 표시 */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* 드롭다운 내부 링크가 호버될 때 배경 색상 변경 */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* 네비게이션 바 아이콘 스타일: 리스트 스타일 없음, 색상 설정 */
 .navbar_icons {
     list-style: none;
+    display: flex;
+    padding: 0 ;
+}
+
+.navbar_icons li:first-child {
+    color: deepskyblue;
+    margin-right: 16px;
+}
+
+.navbar_icons li:nth-child(2) {
     color: blue;
+    margin-right: 16px;
 }
 
-/* 네비게이션 메뉴 항목이 호버될 때 배경 색상 변경 */
+
 .navbar_menu li:hover {
-    background-color: darkgray;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
-/* 화면 크기가 767px 이하일 때 네비게이션 바와 메뉴 스타일 변경: 세로 방향, 중앙 정렬 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    /* 최대 768px 까지는 세로 정렬*/
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .navbar_menu {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .navbar_menu li {
         width: 100%;
+        text-align: center;
     }
-}
 
-button {
-    background-color: #4CAF50; /* 녹색 배경 */
-    color: white; /* 흰색 텍스트 */
-    padding: 10px 20px; /* 패딩 */
-    border: none; /* 테두리 없음 */
-    border-radius: 5px; /* 모서리 둥글게 */
-    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
-}
-
-button:hover {
-    background-color: #45a049; /* 호버 시 더 어두운 녹색으로 변경 */
+    .navbar_icons {
+        justify-content: center;
+        width: 100%;
+    }
 }
