@@ -1,0 +1,44 @@
+/* 전체 문서의 스타일 설정 */
+body {
+    padding: 1rem; /* 모든 측면에 1rem의 패딩 추가 */
+    background-color: black; /* 배경색을 검은색으로 설정 */
+}
+
+/* 그리드 컨테이너 설정 */
+.container {
+    display: grid; /* CSS 그리드 레이아웃 사용 설정 */
+    grid-template-columns: repeat(3, 1fr); /* 세 개의 열을 생성, 각 열의 크기는 사용 가능한 공간의 동일한 비율(1fr) */
+    grid-auto-rows: 150px; /* 자동으로 생성되는 행의 높이를 150픽셀로 설정 */
+    grid-gap: 1rem; /* 그리드 셀 사이의 간격을 1rem으로 설정 */
+    grid-template-areas: 
+            'a a a' /* 첫 번째 행의 그리드 영역을 'a'로 설정하여 세 열 모두 차지 */
+            'b c c' /* 두 번째 행에서 'b'는 첫 열, 'c'는 두 번째와 세 번째 열을 차지 */
+            'b d g' /* 세 번째 행에서 'b', 'd', 'g' 각각 첫, 두 번째, 세 번째 열을 차지 */
+            'e f g' /* 네 번째 행에서 'e', 'f', 'g' 각각 첫, 두 번째, 세 번째 열을 차지 */
+}
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image1 {
+    grid-area: a;
+}
+.image2 {
+    grid-area: b;
+}
+.image3 {
+    grid-area: c;
+}
+.image4 {
+    grid-area: d;
+}
+.image5 {
+    grid-area: e;
+}
+.image6 {
+    grid-area: f;
+}
+.image7 {
+    grid-area: g;
+}

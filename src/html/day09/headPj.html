@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport 설정으로 반응형 디자인을 위한 기초 환경 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <!-- 외부 CSS 파일 연결 -->
+    <link rel="stylesheet" href="headPj.css">
+    <!-- Font Awesome 아이콘 라이브러리 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Nav Bar</title>
+</head>
+<body>
+<!-- 네비게이션 바 구조 -->
+<nav class="navbar">
+    <!-- 로고 부분 -->
+    <div class="navbar_logo">
+        <i class="fa-solid fa-person-digging"></i> <!-- 로고 아이콘 -->
+        <a href="#">하이브</a> <!-- 로고 텍스트 -->
+    </div>
+</nav>
+<!-- 네비게이션 메뉴 -->
+<ul class="navbar_menu">
+    <li><a href="#">Home</a></li>
+    <!-- 각 드롭다운 메뉴 설정 -->
+    <li class="dropdown">
+        <a href="#" id="lessafimLink">르세라핌</a>
+        <ul class="dropdown-content">
+            <li><a href="#">맴버</a></li>
+            <li><a href="#">엘범</a></li>
+            <li><a href="#">화보</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" id="newjeansLink">뉴진스</a>
+        <ul class="dropdown-content">
+            <li><a href="#">맴버</a></li>
+            <li><a href="#">엘범</a></li>
+            <li><a href="#">화보</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" id="ilicLink">아일릿</a>
+        <ul class="dropdown-content">
+            <li><a href="#">맴버</a></li>
+            <li><a href="#">엘범</a></li>
+            <li><a href="#">화보</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" id="btsLink">방탄소년단</a>
+        <ul class="dropdown-content">
+            <li><a href="#">맴버</a></li>
+            <li><a href="#">엘범</a></li>
+            <li><a href="#">화보</a></li>
+        </ul>
+    </li>
+</ul>
+<!-- 소셜 미디어 아이콘 -->
+<ul class="navbar_icons">
+    <li><i class="fa-brands fa-instagram"></i></li>
+    <li><i class="fa-brands fa-facebook"></i></li>
+</ul>
+<!-- 각 메시지 모달 -->
+<div id="messageModal1" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black;">
+    <p>르세라핌 페이지에 오신 것을 환영합니다!</p>
+    <button onclick="document.getElementById('messageModal1').style.display='none'">닫기</button>
+</div>
+<div id="messageModal2" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black;">
+    <p>뉴진스 페이지에 오신 것을 환영합니다!</p>
+    <button onclick="document.getElementById('messageModal2').style.display='none'">닫기</button>
+</div>
+<div id="messageModal3" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black;">
+    <p>아일릿 페이지에 오신 것을 환영합니다!</p>
+    <button onclick="document.getElementById('messageModal3').style.display='none'">닫기</button>
+</div>
+<div id="messageModal4" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid black;">
+    <p>방탄소년단 페이지에 오신 것을 환영합니다!</p>
+    <button onclick="document.getElementById('messageModal4').style.display='none'">닫기</button>
+</div>
+<!-- JavaScript 이벤트 핸들러: 클릭 시 메시지 모달 표시 -->
+<script>
+    document.getElementById('lessafimLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('messageModal1').style.display = 'block';
+    });
+    document.getElementById('newjeansLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('messageModal2').style.display = 'block';
+    });
+    document.getElementById('ilicLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('messageModal3').style.display = 'block';
+    });
+    document.getElementById('btsLink').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('messageModal4').style.display = 'block';
+    });
+</script>
+</body>
+</html>
