@@ -6,43 +6,6 @@
 
 - 선택자란 CSS로 UI의 어느 부분을 디자인할지 표현할 대상이 되는 부분이다.
 
-##### 자식 선택자
-- HTML에서 특정 태그 안에 태그를 넣어 작성할 때 자식 때그에 스타일을 적용하는 선택자이다.
-  - `>`를 사용하여 스타일을 지정한다.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style>
-        #header > h1 {
-            color: red;
-        }
-
-        #section > li {
-            color: orange;
-        }
-    </style>
-</head>
-<body>
-<div id="header">
-    <h1>CSS 선택자 기본</h1>
-    <h2>기본 선택자</h2>
-    <hl>
-        <li>전체 선택자</li>
-        <li>태그 선택자</li>
-        <li>아이디 선택자</li>
-        <li>클래스 선택자</li>
-    </hl>
-</div>
-</body>
-</html>
-```
-
-
-![자식선택자2](https://github.com/king-dong-gun/PKUN_JSP/assets/160683545/1fb2b4e9-0029-4d37-ab78-5ab1a13c2fa7)
 
 
 ##### 반응 선택자
